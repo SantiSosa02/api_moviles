@@ -80,7 +80,7 @@ async function loginUser(req, res) {
       return res.status(401).json({ error: 'Credenciales incorrectas.' });
     }
 
-    res.json({ message: 'Inicio de sesión exitoso.',  rol: user.rol });
+    res.json({ message: 'Inicio de sesión exitoso.',  rol: user.rol , name:user.nombre});
   } catch (error) {
     res.status(500).json({ error: 'Error al iniciar sesión.' });
   }
