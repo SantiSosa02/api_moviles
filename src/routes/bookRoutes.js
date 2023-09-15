@@ -5,7 +5,7 @@ const BookController = require('../controllers/BookController');
 // Rutas para libros
 router.get('/', BookController.getAllBooks);
 router.get('/:id', BookController.getBookById);
-router.post('/', BookController.createBook);
+router.post('/books', BookController.createBook);
 router.put('/:id', BookController.updateBook);
 router.delete('/:id', BookController.deleteBook);
 

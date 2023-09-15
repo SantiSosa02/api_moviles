@@ -9,7 +9,7 @@ router.get('/', RoleController.getAllRoles);
 router.get('/:id', RoleController.getRoleById);
 
 // Ruta para crear un nuevo rol
-router.post('/', RoleController.createRole);
+router.post('/roles', RoleController.createRole);
 
 // Ruta para actualizar un rol por ID
 router.put('/:id', RoleController.updateRole);
